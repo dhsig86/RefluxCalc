@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora RSI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora Refluxo LaringoFaringeo</h1>
+
+    <div class="premise">
+        <p>Por favor, responda às perguntas abaixo com base na intensidade dos seus sintomas na última semana. Use a escala de 0 a 5, onde 0 significa nenhum problema e 5 significa um problema extremo.</p>
+        <p>Qual a intensidade dos sintomas abaixo na última semana?</p>
+    </div>
+
+    <form id="rsiForm">
+        <div class="form-group">
+            <label for="rouquidao">Rouquidão ou voz rouca</label>
+            <select id="rouquidao">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="limpezaGarganta">Limpeza de garganta excessiva</label>
+            <select id="limpezaGarganta">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="noduloGarganta">Sensação de nódulo na garganta</label>
+            <select id="noduloGarganta">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tosseAposComer">Tosse após comer ou deitado</label>
+            <select id="tosseAposComer">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dificuldadeEngolir">Dificuldade para engolir</label>
+            <select id="dificuldadeEngolir">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tosseSemResfriado">Tossir sem estar resfriado</label>
+            <select id="tosseSemResfriado">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mucoGarganta">Sensação de algo pingando na garganta ou sensação de muco</label>
+            <select id="mucoGarganta">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dificuldadeRespirar">Dificuldade para respirar ou crises de asma</label>
+            <select id="dificuldadeRespirar">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pigarro">Pigarro</label>
+            <select id="pigarro">
+                <option value="0">😃 0 - Nenhum problema</option>
+                <option value="1">🙂 1 - Problema leve</option>
+                <option value="2">😐 2 - Problema moderado</option>
+                <option value="3">😟 3 - Problema grave</option>
+                <option value="4">😢 4 - Muito grave</option>
+                <option value="5">😭 5 - Extremo</option>
+            </select>
+        </div>
+
+        <button type="button">Calcular RSI</button>
+    </form>
+
+    <div class="result" id="result">
+        <h2>Resultado: <span id="totalScore">0</span></h2>
+        <p id="classificationMessage"></p>
+    </div>
+
+    <div class="reference">
+        <h3>Referência Acadêmica</h3>
+        <p><a href="https://pubmed.ncbi.nlm.nih.gov/12150380/" target="_blank">Validity and Reliability of the Reflux Symptom Index (RSI)</a></p>
+        <p>Belafsky, P. C., Postma, G. N., & Koufman, J. A. (2002). Validity and Reliability of the Reflux Symptom Index (RSI). <em>Journal of Voice</em>, 16(2), 274-277. doi:10.1016/s0892-1997(02)00097-8</p>
+    </div>
+</div>
+
+<footer>
+    <p>Criado e Produzido pelo Dr. Dario Hart. &copy; 2024</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
