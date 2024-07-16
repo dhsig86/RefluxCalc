@@ -34,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function () {
         classificationMessageElement.innerText = classificationMessage;
     }
 
-    document.querySelector('button').addEventListener('click', calculateRSI);
+    document.querySelector('button[type="button"]').addEventListener('click', calculateRSI);
 });

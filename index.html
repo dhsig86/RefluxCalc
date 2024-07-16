@@ -12,13 +12,13 @@
     <h1>Calculadora Refluxo LaringoFaringeo</h1>
 
     <div class="premise">
-        <p>Por favor, responda às perguntas abaixo com base na intensidade dos seus sintomas na última semana. Use a escala de 0 a 5, onde 0 significa nenhum problema e 5 significa um problema extremo.</p>
+        <p>Por favor, responda às perguntas abaixo com base na intensidade dos seus sintomas no último mês. Use a escala de 0 a 5, onde 0 significa nenhum problema e 5 significa um problema extremo.</p>
         <p>Qual a intensidade dos sintomas abaixo no último mês?</p>
     </div>
 
     <form id="rsiForm">
         <div class="form-group">
-            <label for="rouquidao">Rouquidão ou voz rouca</label>
+            <label for="rouquidao">1. Rouquidão ou voz rouca</label>
             <select id="rouquidao">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -28,8 +28,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="limpezaGarganta">Limpeza de garganta excessiva</label>
+            <label for="limpezaGarganta">2. Limpeza de garganta excessiva</label>
             <select id="limpezaGarganta">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -39,8 +40,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="noduloGarganta">Sensação de nódulo na garganta</label>
+            <label for="noduloGarganta">3. Sensação de nódulo na garganta</label>
             <select id="noduloGarganta">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -50,8 +52,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="tosseAposComer">Tosse após comer ou deitado</label>
+            <label for="tosseAposComer">4. Tosse após comer ou deitado</label>
             <select id="tosseAposComer">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -61,8 +64,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="dificuldadeEngolir">Dificuldade para engolir</label>
+            <label for="dificuldadeEngolir">5. Dificuldade para engolir</label>
             <select id="dificuldadeEngolir">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -72,8 +76,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="tosseSemResfriado">Tossir sem estar resfriado</label>
+            <label for="tosseSemResfriado">6. Tossir sem estar resfriado</label>
             <select id="tosseSemResfriado">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -83,8 +88,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="mucoGarganta">Sensação de algo pingando na garganta ou sensação de muco</label>
+            <label for="mucoGarganta">7. Sensação de algo pingando na garganta ou sensação de muco</label>
             <select id="mucoGarganta">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -94,8 +100,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="dificuldadeRespirar">Dificuldade para respirar ou crises de asma</label>
+            <label for="dificuldadeRespirar">8. Dificuldade para respirar ou crises de asma</label>
             <select id="dificuldadeRespirar">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -105,8 +112,9 @@
                 <option value="5">😭 5 - Extremo</option>
             </select>
         </div>
+        <hr>
         <div class="form-group">
-            <label for="pigarro">Pigarro</label>
+            <label for="pigarro">9. Pigarro</label>
             <select id="pigarro">
                 <option value="0">😃 0 - Nenhum problema</option>
                 <option value="1">🙂 1 - Problema leve</option>
@@ -117,7 +125,10 @@
             </select>
         </div>
 
-        <button type="button">Calcular RSI</button>
+        <div class="buttons">
+            <button type="button" onclick="calculateRSI()">Calcular RSI</button>
+            <button type="reset">Resetar</button>
+        </div>
     </form>
 
     <div class="result" id="result">

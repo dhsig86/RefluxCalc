@@ -56,9 +56,20 @@ select {
     font-size: 16px;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 button {
-    display: block;
-    width: 100%;
     padding: 10px;
     border: none;
     background-color: #28a745;
@@ -66,12 +77,20 @@ button {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
     transition: background-color 0.3s;
+    width: 48%;
 }
 
 button:hover {
     background-color: #218838;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+button[type="reset"]:hover {
+    background-color: #c82333;
 }
 
 .result {
