@@ -18,6 +18,15 @@
 
     <form id="rsiForm">
         <div class="form-group">
+            <label for="nome">Nome do Paciente</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data">
+        </div>
+        <hr>
+        <div class="form-group">
             <label for="rouquidao">1. Rouquidão ou voz rouca</label>
             <select id="rouquidao">
                 <option value="0">😃 0 - Nenhum problema</option>
@@ -126,7 +135,8 @@
         </div>
 
         <div class="buttons">
-            <button type="button" onclick="calculateRSI()">Calcular RSI</button>
+            <button type="button" onclick="calculateRSI()">Calcular</button>
+            <button type="button" onclick="printReport()">Imprimir Relatório</button>
             <button type="reset">Resetar</button>
         </div>
     </form>
@@ -140,6 +150,8 @@
         <h3>Referência Acadêmica</h3>
         <p><a href="https://pubmed.ncbi.nlm.nih.gov/12150380/" target="_blank">Validity and Reliability of the Reflux Symptom Index (RSI)</a></p>
         <p>Belafsky, P. C., Postma, G. N., & Koufman, J. A. (2002). Validity and Reliability of the Reflux Symptom Index (RSI). <em>Journal of Voice</em>, 16(2), 274-277. doi:10.1016/s0892-1997(02)00097-8</p>
+        <p><a href="https://www.scielo.br/j/bjorl/a/ZJtJ6Hq6cGpGJ3nhjK9bVRD/?lang=en" target="_blank">Tradução e adaptação cultural do reflux symptom index para o português brasileiro</a></p>
+        <p>Saliture TBS. (2015). Tradução e adaptação cultural do reflux symptom index para o português brasileiro e avaliação de suas propriedades psicométricas. São Paulo: Faculdade de Ciências Médicas da Santa Casa de São Paulo.</p>
     </div>
 </div>
 
